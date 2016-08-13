@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="com.example.kevin.ezres.Reservation">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text="Reservation"
+            android:gravity="center"
+            android:textSize="50dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="No of People : "
+                android:textSize="25dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/reservationNoPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :"
+                android:textSize="25dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/reservationDate"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:text="DD/MM/YYYY"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:textSize="20dp"/>
+            <Button
+                android:id="@+id/searchDate"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/calendarbutton"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time :"
+                android:textSize="25dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/reservationTime"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:text="HH:MM"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:textSize="20dp"/>
+            <Button
+                android:id="@+id/searchTime"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/calendarbutton"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/reserveSubmit"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:text="Reserve"
+            android:textSize="35dp"/>
+    </LinearLayout>
+
+</FrameLayout>

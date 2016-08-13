@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:title="Home"
+            android:icon="@drawable/home"></item>
+        <item
+            android:id="@+id/menu_order_view"
+            android:title="Show Shoppingcart"
+            android:icon="@drawable/shoppingcart"></item>
+        <item
+            android:id="@+id/menu_order_add"
+            android:title="Add Order"
+            android:icon="@drawable/order"></item>
+        <item
+            android:id="@+id/order_view"
+            android:title="Order History"
+            android:icon="@drawable/order"></item>
+        <item
+            android:id="@+id/addreserve_table"
+            android:title="Add Reservation Table"
+            android:icon="@drawable/reservation"></item>
+        <item
+            android:id="@+id/reserve_table"
+            android:title="View Reserve Table"
+            android:icon="@drawable/reservation"></item>
+
+    </group>
+</menu>

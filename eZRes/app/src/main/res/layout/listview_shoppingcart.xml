@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/orderImage"
+            android:src="@drawable/ayam"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/orderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="orderProduct"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/orderQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/orderPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="15dp"
+                android:textColor="#000000"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#111111"></View>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="com.example.kevin.ezres.fragment_home">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favourite Menu"/>
+        <ListView
+            android:id="@+id/home_listview_hotitem"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"></ListView>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Existing Reservation"/>
+        <ListView
+            android:id="@+id/home_listview_existingreservation"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"></ListView>
+
+    </LinearLayout>
+
+</FrameLayout>

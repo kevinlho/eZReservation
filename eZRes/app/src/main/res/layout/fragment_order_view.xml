@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="com.example.kevin.ezres.orderView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="40dp"
+            android:text="Order"
+            android:gravity="center"/>
+        <ListView
+            android:id="@+id/listView_orderView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+</FrameLayout>

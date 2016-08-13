@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".shoppingcartView"
+
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/listView_shoppingcartView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:id="@+id/orderType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/orderDinein"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dine In"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/orderTakeout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Take Out" />
+
+                    <RadioButton
+                        android:id="@+id/orderDelivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="right">
+                <TextView
+                    android:id="@+id/order_totalItem"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Total Item : "
+                    android:textSize="20dp"
+                    android:gravity="right"/>
+
+                <TextView
+                    android:id="@+id/order_totalPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Total Price : "
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"
+                    android:gravity="right"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/order_checkoutButton"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:text="Checkout"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

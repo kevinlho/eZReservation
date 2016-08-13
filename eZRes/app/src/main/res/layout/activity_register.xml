@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context="com.example.kevin.ezres.Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ez1">
+            </ImageView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Registration"
+            android:layout_below="@+id/title"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:hint="Email"
+            android:gravity="center"
+            android:singleLine="true"
+            android:maxLength="28"/>
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:hint="Password"
+            android:password="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:maxLength="28"/>
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:hint="Name"
+            android:gravity="center"
+            android:singleLine="true"
+            android:maxLength="28"/>
+        <EditText
+            android:id="@+id/register_contact"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:hint="Contact"
+            android:gravity="center"
+            android:singleLine="true"
+            android:maxLength="28"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Register!" />
+
+    </LinearLayout>
+
+</LinearLayout>
